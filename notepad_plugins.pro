@@ -27,7 +27,8 @@ SOURCES += \
     src/DockingFeature/StaticDialog.cpp \
     src/NppPluginDemo.cpp \
     src/PluginDefinition.cpp \
-    src/unix_convertor.cpp
+    src/unix_convertor.cpp \
+    src/ip_convertor.cpp
 
 HEADERS += \
     src/DockingFeature/Docking.h \
@@ -42,7 +43,8 @@ HEADERS += \
     src/PluginDefinition.h \
     src/PluginInterface.h \
     src/Scintilla.h \
-    src/unix_convertor.h
+    src/unix_convertor.h \
+    src/ip_convertor.h
 
 unix {
     target.path = /usr/lib

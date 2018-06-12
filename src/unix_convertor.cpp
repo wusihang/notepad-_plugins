@@ -3,11 +3,9 @@
 
 namespace my_plugin {
 
-char* time::toString(){
-    char* buf = new char[100];
+void time::toString(char* buf){
     sprintf(buf,"%04d-%02d-%02d %02d:%02d:%02d",this->nYear, this->nMonth, this->nDay,
             this->nHour, this->nMin, this->nSec);
-    return buf;
 }
 
 bool time::readTimeFromString(time& time,char* timeStr){

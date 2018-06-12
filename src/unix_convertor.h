@@ -17,7 +17,7 @@ public:
     unsigned char nHour;
     unsigned char nMin;
     unsigned char nSec;
-    char* toString();
+    void toString(char* buf);
     static bool readTimeFromString(time& time,char* timeStr);
 };
 
